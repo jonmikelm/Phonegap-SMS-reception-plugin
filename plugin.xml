@@ -26,6 +26,9 @@ version="0.1.2">
 
 <config-file target="AndroidManifest.xml" parent="/manifest">
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+</config-file>
+
+<config-file target="AndroidManifest.xml" parent="/manifest/application">
     <receiver android:name="org.apache.cordova.plugin.SmsReceiver" android:exported="true">
         <intent-filter android:priority="999">
             <action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
